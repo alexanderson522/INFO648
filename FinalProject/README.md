@@ -1,2 +1,4 @@
-This is the repo folder in which all final project materials will be uploaded
-ReadMe will be updated later
+This Jupyter notebook builds multiple models (Random Forest & Logistic Regression) to forecast which states in the Mid Atlantic (NY, NJ, PA) will experience growth from 2020 to 2030. Models have been trained on 2010 data such as tract density, age makeup, demographics, and home ownership/vacancy and then fit to 2020 tract populations to measure efficacy of the models. Growth is defined as a percentage of tracts in the state that see growth from one census to the next.
+Data was collected from the US Census and has been loaded in via raw .csv files.
+
+The Random Forest model (without clustering) proved to be highly effective at predicting growth on a tract basis, with an AUC of 0.813. This model was then used to forecast growth from 2020 to 2030, where it predicted that New Jersey will have the highest percentage of tracts with growth of the three states. 
